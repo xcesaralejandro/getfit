@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="unko.getfit.configuracion">
+    <item
+        android:id="@+id/go_home"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom" />
+</menu>

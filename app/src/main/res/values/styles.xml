@@ -1,0 +1,328 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeResults" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccentResults</item>
+    </style>
+
+    <style name="AppThemeDarkActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- CONTAINER Y WRAPPER -->
+    <style name="match_wrap" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_match" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wrap_wrap" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="container_cardview" parent="match_match">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">1dp</item>
+    </style>
+
+    <style name="container_cardview_tabbed">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="container_cardview_config" parent="match_match">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">1dp</item>
+    </style>
+
+    <style name="linear_v" parent="match_wrap">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="linear_h" parent="match_wrap">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="linear_match_v" parent="match_match">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="linear_match_h" parent="match_match">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="container" parent="match_wrap">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="container_small_padding" parent="match_match">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="container_scroll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="container_scroll_match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="label" parent="match_wrap">
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:fontFamily">@font/newscyclebold</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="label_dark_gray_quick" parent="match_wrap">
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:fontFamily">@font/quicksandregular</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/colorLabelDarkGray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="label_dark_gray_quick_clear" parent="match_wrap">
+        <item name="android:fontFamily">@font/quicksandregular</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/colorLabelDarkGray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="number_accent" parent="match_wrap">
+        <item name="android:fontFamily">@font/number</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="number_white" parent="match_wrap">
+        <item name="android:fontFamily">@font/number</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="number_white_bold" parent="match_wrap">
+        <item name="android:fontFamily">@font/number</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="label_medition" parent="wrap_wrap">
+        <item name="android:fontFamily">@font/newscyclebold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="number_wrap_white_bold" parent="wrap_wrap">
+        <item name="android:fontFamily">@font/newscyclebold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="label_title" parent="match_wrap">
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:fontFamily">@font/newscyclebold</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="label_subtitle" parent="match_wrap">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:fontFamily">@font/newscyclebold</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="label_error" parent="match_wrap">
+        <item name="android:fontFamily">@font/newscycleregular</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/colorError</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="label_title_white" parent="match_wrap">
+        <item name="android:fontFamily">@font/newscyclebold</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="label_subtitle_white" parent="match_wrap">
+        <item name="android:fontFamily">@font/quicksandregular</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="primary_button" parent="match_wrap">
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_button_gradient</item>
+        <item name="android:fontFamily">@font/newscycleregular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="container_actividad_fisica" parent="match_wrap">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_rectangle_no_selected</item>
+        <item name="android:fontFamily">@font/quicksandbold</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="input_centered" parent="match_wrap">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/quicksandregular</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="met_baseColor">@color/colorText</item>
+        <item name="met_errorColor">#f00</item>
+        <item name="met_floatingLabel">highlight</item>
+        <item name="met_primaryColor">@color/colorPrimary</item>
+        <item name="met_textColorHint">@color/colorHint</item>
+    </style>
+
+    <style name="button_ripple" parent="match_wrap">
+        <item name="rv_framerate">20</item>
+        <item name="rv_rippleDuration">500</item>
+    </style>
+
+    <style name="label_gender_select">
+        <item name="android:fontFamily">@font/quicksandregular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="label_actividad_title" parent="match_wrap">
+        <item name="android:fontFamily">@font/quicksandregular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorLabelDarkGray</item>
+    </style>
+
+    <style name="label_actividad_description" parent="match_wrap">
+        <item name="android:fontFamily">@font/newscyclebold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorLabelDarkGray</item>
+    </style>
+
+    <style name="table_bold" parent="match_wrap">
+        <item name="android:fontFamily">@font/newscyclebold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorTable</item>
+    </style>
+
+    <style name="table_content" parent="match_wrap">
+        <item name="android:fontFamily">@font/quicksandregular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorTable</item>
+    </style>
+
+    <style name="table_caption" parent="match_wrap">
+        <item name="android:fontFamily">@font/newscycleregular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="table_caption_bold" parent="match_wrap">
+        <item name="android:fontFamily">@font/newscyclebold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="separator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+    </style>
+
+    <style name="separator_accent" parent="separator">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="table_row" parent="linear_h">
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@color/tableBackground</item>
+    </style>
+
+    <style name="view_title_Separator" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:background">@color/colorAccentGradient</item>
+    </style>
+
+    <style name="table_middle_row" parent="linear_h">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:background">@color/tableBackground</item>
+    </style>
+</resources>

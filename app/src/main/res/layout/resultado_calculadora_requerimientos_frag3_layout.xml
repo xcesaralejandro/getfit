@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        style="@style/container_cardview_tabbed">
+        <LinearLayout style="@style/linear_v">
+            <TextView
+                style="@style/label_title"
+                android:text="@string/label_mi_distribuci_n_de_kcal_por_comida"
+                android:textAlignment="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                android:layout_weight="0"
+                />
+            <ScrollView style="@style/container_scroll">
+                <LinearLayout style="@style/container">
+                    <LinearLayout
+                        style="@style/linear_h"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_comida">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/taza_de_te"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"/>
+                        <LinearLayout style="@style/linear_v"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_desayuno"
+                                android:gravity="end"
+                                android:fontFamily="@font/adamcgpro"
+                                android:textColor="@color/colorAccentGradient"
+                                android:textSize="20sp"/>
+                            <LinearLayout style="@style/linear_h">
+                                <TextView
+                                    android:id="@+id/txt_kcal_desayuno"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/number"
+                                    android:text="000"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryGradient"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="4"
+                                    android:fontFamily="@font/quicksandregular"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:text="kcal"
+                                    android:textColor="@color/colorLabelDarkGray"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/linear_h"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_comida">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/colacion1"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"/>
+                        <LinearLayout style="@style/linear_v"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_entre_comidas"
+                                android:gravity="end"
+                                android:fontFamily="@font/adamcgpro"
+                                android:textColor="@color/colorAccentGradient"
+                                android:textSize="20sp"/>
+                            <LinearLayout style="@style/linear_h">
+
+                                <TextView
+                                    android:id="@+id/txt_kcal_entre_comidas_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/number"
+                                    android:text="000"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryGradient"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="4"
+                                    android:fontFamily="@font/quicksandregular"
+                                    android:paddingStart="5dp"
+                                    android:text="kcal"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorLabelDarkGray"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/linear_h"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_comida">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/cena"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"/>
+                        <LinearLayout style="@style/linear_v"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_almuerzo"
+                                android:gravity="end"
+                                android:fontFamily="@font/adamcgpro"
+                                android:textColor="@color/colorAccentGradient"
+                                android:textSize="20sp"/>
+                            <LinearLayout style="@style/linear_h">
+
+                                <TextView
+                                    android:id="@+id/txt_kcal_almuerzo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/number"
+                                    android:text="000"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryGradient"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="4"
+                                    android:fontFamily="@font/quicksandregular"
+                                    android:paddingStart="5dp"
+                                    android:text="kcal"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorLabelDarkGray"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/linear_h"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_comida">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/colacion1"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"/>
+                        <LinearLayout style="@style/linear_v"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_entre_comidas"
+                                android:gravity="end"
+                                android:fontFamily="@font/adamcgpro"
+                                android:textColor="@color/colorAccentGradient"
+                                android:textSize="20sp"/>
+                            <LinearLayout style="@style/linear_h">
+
+                                <TextView
+                                    android:id="@+id/txt_kcal_entre_comidas_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/number"
+                                    android:text="000"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryGradient"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="4"
+                                    android:fontFamily="@font/quicksandregular"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:text="kcal"
+                                    android:textColor="@color/colorLabelDarkGray"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/linear_h"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_comida">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/taza_de_te"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"/>
+                        <LinearLayout style="@style/linear_v"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_once"
+                                android:gravity="end"
+                                android:fontFamily="@font/adamcgpro"
+                                android:textColor="@color/colorAccentGradient"
+                                android:textSize="20sp"/>
+                            <LinearLayout style="@style/linear_h">
+
+                                <TextView
+                                    android:id="@+id/txt_kcal_once"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/number"
+                                    android:text="000"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryGradient"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="4"
+                                    android:fontFamily="@font/quicksandregular"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:text="kcal"
+                                    android:textColor="@color/colorLabelDarkGray"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/linear_h"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_comida">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:src="@drawable/cena"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"/>
+                        <LinearLayout style="@style/linear_v"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_cena"
+                                android:gravity="end"
+                                android:fontFamily="@font/adamcgpro"
+                                android:textColor="@color/colorAccentGradient"
+                                android:textSize="20sp"/>
+                            <LinearLayout style="@style/linear_h">
+
+                                <TextView
+                                    android:id="@+id/txt_kcal_cena"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/number"
+                                    android:text="000"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimaryGradient"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="4"
+                                    android:fontFamily="@font/quicksandregular"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:text="kcal"
+                                    android:textColor="@color/colorLabelDarkGray"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

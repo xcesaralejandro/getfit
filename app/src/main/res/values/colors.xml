@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2285be</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ff4847</color>
+    <color name="colorText">#858c93</color>
+    <color name="colorHint">#a0a0a0</color>
+    <color name="colorTable">#353535</color>
+    <color name="tableBackground">#eeeeee</color>
+    <color name="colorError">#de2222</color>
+    <color name="colorAccentResults">#FF0</color>
+    <color name="colorLabelDarkGray">#666666</color>
+    <color name="colorTitleDarkGray">#444444</color>
+    <color name="colorPrimaryGradient">#f5aa7e</color>
+    <color name="colorAccentGradient">#e27e9e</color>
+</resources>
